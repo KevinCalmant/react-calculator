@@ -11,8 +11,10 @@ const Operator = ({
   const calculationContext = useContext(CalculationContext);
 
   return (
-    <div className='operator button' onClick={() => calculationContext.handleCalculation(operation)}>
-      <span className={`icon-${label}`}></span>
+    <div className={'button ' + (isNaN(+operation) ? 'operator' : 'number')} onClick={() => calculationContext.handleCalculation(operation)}>
+      {
+        isNaN(+operation) ? (<span className={`icon-${label}`}></span>) : <span>{label}</span>
+      }
     </div>
   );
 };

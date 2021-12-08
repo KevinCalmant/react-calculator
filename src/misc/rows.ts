@@ -1,21 +1,21 @@
 interface Row {
   label: string;
-  operation: string | null;
+  operation: string;
 }
 
 export const rows: Row[][] = [
   [
     {
       label: '7',
-      operation: null,
+      operation: '7',
     },
     {
       label: '8',
-      operation: null,
+      operation: '8',
     },
     {
       label: '9',
-      operation: null,
+      operation: '9',
     },
     {
       label: 'divide',
@@ -25,15 +25,15 @@ export const rows: Row[][] = [
   [
     {
       label: '4',
-      operation: null,
+      operation: '4',
     },
     {
       label: '5',
-      operation: null,
+      operation: '5',
     },
     {
       label: '6',
-      operation: null,
+      operation: '6',
     },
     {
       label: 'multiple',
@@ -43,15 +43,15 @@ export const rows: Row[][] = [
   [
     {
       label: '1',
-      operation: null,
+      operation: '1',
     },
     {
       label: '2',
-      operation: null,
+      operation: '2',
     },
     {
       label: '3',
-      operation: null,
+      operation: '3',
     },
     {
       label: 'minus',
@@ -65,7 +65,7 @@ export const rows: Row[][] = [
     },
     {
       label: '0',
-      operation: null
+      operation: '0'
     },
     {
       label: 'eq',
