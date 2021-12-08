@@ -1,17 +1,14 @@
-import { useContext } from "react";
-import CalculationContext from "../contexts/CalculationContext";
-
 const Operator = ({
   operation,
-  label
+  label,
+  handleCalculation
 }: {
   operation: string;
   label: string;
+  handleCalculation: (value: string) => void
 }) => {
-  const calculationContext = useContext(CalculationContext);
-
   return (
-    <div className={'button ' + (isNaN(+operation) ? 'operator' : 'number')} onClick={() => calculationContext.handleCalculation(operation)}>
+    <div className={'button ' + (isNaN(+operation) ? 'operator' : 'number')} onClick={() => handleCalculation(operation)}>
       {
         isNaN(+operation) ? (<span className={`icon-${label}`}></span>) : <span>{label}</span>
       }
