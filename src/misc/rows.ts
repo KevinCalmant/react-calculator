@@ -1,4 +1,9 @@
-export const rows = [
+interface Row {
+  label: string;
+  operation: string | null;
+}
+
+export const rows: Row[][] = [
   [
     {
       label: '7',
@@ -14,7 +19,7 @@ export const rows = [
     },
     {
       label: 'divide',
-      operation: '-',
+      operation: '/',
     },
   ],
   [
@@ -32,7 +37,7 @@ export const rows = [
     },
     {
       label: 'multiple',
-      operation: '-',
+      operation: '*',
     },
   ],
   [
@@ -53,4 +58,22 @@ export const rows = [
       operation: '-',
     },
   ],
+  [
+    {
+      label: 'clear',
+      operation: 'clear'
+    },
+    {
+      label: '0',
+      operation: null
+    },
+    {
+      label: 'eq',
+      operation: '='
+    },
+    {
+      label: 'plus',
+      operation: '+'
+    }
+  ]
 ];
