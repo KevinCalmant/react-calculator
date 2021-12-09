@@ -1,6 +1,7 @@
 
 .icon-minus:before { content: '\e800'; } /* '' */
 .icon-cancel:before { content: '\e801'; } /* '' */
+.icon-reply:before { content: '\e802'; } /* '' */
 .icon-divide:before { content: '\e803'; } /* '' */
 .icon-plus-1:before { content: '\e804'; } /* '' */
 .icon-eq:before { content: '\e806'; } /* '' */

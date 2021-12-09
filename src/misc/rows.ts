@@ -61,19 +61,19 @@ export const rows: Row[][] = [
   [
     {
       label: 'clear',
-      operation: 'clear'
+      operation: 'clear',
     },
     {
       label: '0',
-      operation: '0'
+      operation: '0',
     },
     {
       label: 'eq',
-      operation: '='
+      operation: '=',
     },
     {
       label: 'plus',
-      operation: '+'
-    }
-  ]
+      operation: '+',
+    },
+  ],
 ];
